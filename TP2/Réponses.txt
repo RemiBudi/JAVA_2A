@@ -1,0 +1,11 @@
+Exercice 1 
+
+1. Le paquet de cette application est rdvManager. Le nom détermine l'emplacement des fichiers sources parce qu'is sont tous situés dans ce dossier.
+
+3. Les objets de cette classe sont immuables parce qu'on ne peut changer leurs composantes.
+
+4. Cela nécéssitera la création d'une sous classe qui héritera de Rdv.
+
+5.  Il faut redéfinir la méthode equals pour cette classe, c'est à dire comparer chaque attribut de deux objets.
+
+6. Avec un paramètre null, la fonction ne se comporte pas comme le dit la spécification.

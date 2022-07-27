@@ -1,0 +1,113 @@
+QCM de "révision" Java
+======================
+
+Répondez aux questions ci-dessous, en remplaçant O/N par O ou N et en joignant le fichier texte
+à votre rendu de TP.
+
+La meilleure facon de répondre, c'est d'expérimenter... Le but de ce QCM est de vous faire toucher du doigt
+un peu tous les concepts donc sortez votre IDE et faitres vous quelques classes et interfaces expérimentales
+sur une coin de table. 
+
+Il y a bien sûr quelques pièges, ce n'est pas parce que l'IDE laisse faire que Java fait ce que vous croyez. 
+
+Il y a aussi quelques questions sur des sujets pas vus en cours, mais on ne survit dans l'informatique 
+qu'en apprenant par soi-même.
+
+---------------------------------
+Une classe abstraite peut avoir:
+
+- des attributs abstraits: N
+- des attributs définis: O
+- des methodes abstraites: O
+- des méthodes définies: O
+- des constructeurs abstraits: N
+- des constructeurs définis: O
+- des methodes statiques: O
+- des attributs statiques: O
+
+En Java8 et plus, une "Interface" peut avoir:
+
+- des attributs d'instance définis: N
+- des methodes abstraites: O
+- des méthodes définies: N
+- des méthodes 'protected': N
+- des méthodes 'private': O
+- des methodes statiques: O
+- des attributs statiques: O
+- des méthodes 'public' définies: N
+- des méthodes 'default' définies: O
+
+Une classe abstraite qui dérive d'une autres classe abstraite:
+
+- doit définir les methodes abstraites de sa class parente: N
+- peut ajouter des méthodes abstraites à celles de sa classe parente: O
+- peut ajouter des attributs à ceux de sa classe parente: O
+- peut ajouter des attributs statiques à ceux de sa classe parente: O
+
+
+Une classe réelle qui dérive une classe abstraite:
+
+- doit définir toutes les méthodes abstraites: O
+- ne peut pas surcharcher les méthodes définies par sa class parente: N
+
+Une classe qui dérive d'une autre classe:
+
+- peut étendre la visibilité des attributs de sa classe mère: N
+- peut restreindre la visibilité des attributs de sa classe mère: O
+- peut étendre la visibilité des méthodes de sa classe mère: N
+- peut restreindre la visibilité des méthodes de sa classe mère: O
+
+Le modifier "final" sur un méthode:
+
+- indique que la valeur retournée ne peut pas être changée: N
+- indique que la méthode ne peut pas être surchargée par une classe fille: O
+
+Une méthode 'static':
+
+- peut changer la valeur d'un attribut 'static': O
+- peut changer la valeur d'un attribut d'instance: O
+
+Une méthode d'instance:
+
+- peut changer la valeur d'un attribut 'static': O
+- peut changer la valeur d'un attribut d'instance: O
+
+Dans la déclaration:
+
+   class ThisClass implements SomethingElse
+   
+- SomethingElse est une class réelle: N
+- SomethingElse est une class abstraite: N
+- SomethingElse est une interface: O
+
+Dans la déclaration:
+
+   class ThisClass extends SomethingElse
+   
+- SomethingElse est une class réelle: O
+- SomethingElse est une class abstraite: O
+- SomethingElse est une interface: N
+
+La déclaration:
+
+   class ThisClass implements Something, SomethingElse
+
+- est syntaxiquement correcte: O  
+- pouquoi?: <Une classe peut implémenter plusieurs interfaces>
+
+La déclaration:
+
+   class ThisClass extends Something, SomethingElse
+
+- est syntaxiquement correcte: N
+- pouquoi?: <Une classe ne peut étendre qu'une seule classe abstraite ou réelle)>
+
+Joignez le code source d'une interface et d'une classe, où:
+
+- L'interface définit:
+    - une méthode 'default' qui fait a minima "System.out.println("Methode 'default'");"
+    - une méthode 'private' qui fait a minima "System.out.println("Methode 'private'");
+
+- La classe implémente l'interface:
+- La methode 'default' est appelée 
+- La methode 'private' est appelée 
